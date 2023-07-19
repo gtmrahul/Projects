@@ -1,0 +1,276 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* front page css*/
+#landingPage {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8)100%), url('LandingPage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* navbar */
+#navbar {
+    position: absolute;
+    width: 100%;
+    height: 12.7vh;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11.5vw;
+    flex-flow: nowrap;
+}
+
+#right_comp {
+    display: flex;
+}
+
+#language {
+    border: 0.2px solid white;
+    background-color: black;
+    border-radius: 0.2rem;
+    color: white;
+    width: 123px;
+    height: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 23px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#sign_in {
+    width: 76px;
+    height: 32px;
+    border: 0px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-weight: 600;
+}
+
+/* #headelm {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 160.42px;
+    align-items: center;
+} */
+
+.langbtn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* sign in box on front page */
+#info {
+    width: 74vw;
+    position: relative;
+    height: 50vh;
+    margin: 42vh 14vw;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+#info h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.email_input {
+    width: 376px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    border: .5px solid #ebebeb;
+    border-radius: .20rem;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.submit_email {
+    width: 201px;
+    height: 56px;
+    margin-left: 8px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 24px;
+    border: 0;
+    border-radius: .25rem;
+}
+
+
+/* below element of front page */
+.below_head {
+    height: 529px;
+    background-color: black;
+    border-top: 8px solid rgb(35, 35, 35);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.below_head_text {
+    color: white;
+    text-align: center;
+    width: 514px;
+    height: 192px;
+}
+
+#just_below_head{
+    font-size: 24px; 
+    margin-top: 16px; 
+    text-align: left; 
+    padding-left: 58px;
+}
+
+#tvbox {
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#tvbox img {
+    float: right;
+    width: 508px;
+    height: 381px;
+    margin-top: -16px;
+}
+
+#video1 {
+    position: absolute;
+    background-position: center;
+    width: 370px;
+    margin-top: 63px;
+}
+
+#downloading_box {
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 282px;
+    height: 96px;
+    display: flex;
+    padding: 8px 12px;
+    border: 2px solid rgb(65, 65, 65);
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+    border-radius: 0.75rem;
+    z-index: 1;
+    color: white;
+    overflow: hidden;
+    margin-left: 22%;
+    transform: translateY(-130%);
+    z-index: 1;
+    background-color: black;
+    align-items: center;
+}
+
+#video2 {
+    width: 318px;
+    margin-top: 22px;
+    position: absolute;
+}
+
+#above_footer {
+    border-top: 8px solid rgb(35, 35, 35);
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 72px 0;
+    height: auto
+}
+
+
+/* FAQ section */
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 75vw;
+    height: 84px;
+    padding: 24px;
+    margin: 5px;
+    overflow-y: hidden;
+    margin-left: 12vw;
+}
+
+.btn:hover{
+    background-color: rgb(95, 90, 90);
+}
+
+.description {
+    background-color: rgb(45, 45, 45);
+    border: none;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 75vw;
+    height: auto;
+    padding: 24px;
+    margin: 5px;
+    overflow-y: hidden;
+    margin-left: 12vw;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* footer section */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    height: 177px;
+}
+
+li {
+    width: 25vw;
+    height: 21px;
+    color: white;
+    overflow: hidden;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+#footer {
+    background-color: black;
+    height: 465px;
+    text-align: left;
+    border-top: 8px solid rgb(35, 35, 35);
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
